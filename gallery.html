@@ -140,6 +140,78 @@
             color: cyan;
         }
 
+        body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .blog-post {
+      background: burlywood;
+      max-width: 800px;
+      width: 100%;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    figure {
+      margin: 0;
+      text-align: center;
+    }
+
+    figure img {
+      width: 100%;
+      max-height: 350px;
+      object-fit: contain;
+      border-radius: 10px;
+    }
+
+    figcaption {
+      font-size: 0.9rem;
+      color: #777;
+      margin-top: 8px;
+    }
+
+    section {
+      margin-top: 20px;
+    }
+
+    section h2 {
+      color: #6b3e26;
+      margin-bottom: 10px;
+    }
+
+    section p {
+      line-height: 1.6;
+      color: #333;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .blog-post {
+        padding: 15px;
+      }
+
+      .blog-post h1 {
+        font-size: 1.5rem;
+      }
+    }
+
         footer {
         background: linear-gradient(45deg, #1a1a2e, #16213e);
         color: white;
@@ -167,7 +239,7 @@
         <header>
             <div class="header-container">
                 <div class="logo" onclick="window.location.href='index.html'">
-                    <img src="" alt="Motion Coffee House Logo" width="100" height="100">
+                    <img src="logo.png" alt="Motion Coffee House Logo" width="100" height="100">
                     <h1> Motion Coffee House</h1>
                 </div>
                 <nav>
@@ -189,17 +261,51 @@
         </header><br><br>
 
 
-        <article>
+    <div class="container">
+    <article class="blog-post">
+      <figure>
+        <img src="coffee.png" alt="a customer image">
+        <figcaption>The energy behind every cup</figcaption>
+      </figure>
 
-        </article>
+      <section>
+        <h2>Our Story</h2>
+        <p>
+          Motion Coffee House was created for people who are always on the move.
+          Whether you're heading to work, meeting friends, or just need a moment
+          to recharge, we provide the perfect cup to keep your day flowing.
+        </p>
+      </section>
+
+      <section>
+        <h2>What Makes Us Different</h2>
+        <p>
+          At Motion Coffee House, we blend quality with speed. Our beans are
+          carefully selected, freshly roasted, and brewed to perfection.
+          We believe coffee should not only taste good but also energize your lifestyle.
+        </p>
+      </section>
+
+      <section>
+        <h2>Our Favorites</h2>
+        <ul>
+          <li>Signature Espresso Shot</li>
+          <li>Creamy Cappuccino</li>
+          <li>Vanilla Latte</li>
+          <li>Iced Caramel Coffee</li>
+        </ul>
+      </section>
+
+    </article>
+  </div>
         <br><br>
 
-        <video src="#" controls width="640"> Your browser does not support video elements</video>
+        <video src="4_5920042810383277282.mp4" controls width="640" > Your browser does not support video elements</video>
 
 
         <br> <br> <br>
 
-        <audio src="#" controls> Your browser does not support the audio element</audio>
+        <audio src="Marc-Scibilia-More-To-This-(CeeNaija.com).mp3" controls> Your browser does not support the audio element</audio>
    <footer>
 
     <div class="footer-col">
